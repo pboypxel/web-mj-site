@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MT Miftahul Jannah</title>
+    <link href="style.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <img src="mj.png" alt="MT Miftahul Jannah Logo">
+        <h1>MT Miftahul Jannah</h1>
+        <nav>
+            <a href="#activities">Kegiatan</a>
+            <a href="kontakmj.html">Kontak</a>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="hero">
+        <video autoplay muted loop>
+            <source src="mj.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <div class="content">
+            <h2>الشباب اليوم هم قادة المستقبل</h2>
+            <p>MT Miftahul Jannah</p>
+            <a href="#about" class="btn-primary">Support Kami</a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <h2>Tentang Kami</h2>
+        <p>Majlis Taklim Miftahul Jannah adalah tempat berkumpulnya pemuda-pemudi yang bersemangat untuk meningkatkan ilmu agama dan berdakwah dengan penuh semangat.</p>
+    </section>
+
+    <!-- New Section: Activities -->
+    <section id="activities">
+        <div class="card">
+            <img src="activity1.jpg" alt="Aktivitas 1">
+            <div class="content">
+                <h3>Pengajian Rutin</h3>
+                <p>Setiap minggu kami mengadakan pengajian rutin untuk meningkatkan pemahaman agama.</p>
+            </div>
+        </div>
+        <div class="card">
+            <img src="activity2.jpg" alt="Aktivitas 2">
+            <div class="content">
+                <h3>Workshop Dakwah</h3>
+                <p>Berbagai workshop mengenai cara berdakwah yang efektif diadakan secara berkala.</p>
+            </div>
+        </div>
+        <div class="card">
+            <img src="activity3.jpg" alt="Aktivitas 3">
+            <div class="content">
+                <h3>Pelatihan Kepemimpinan</h3>
+                <p>Pelatihan untuk mempersiapkan generasi muda sebagai pemimpin masa depan.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 MT Miftahul Jannah | 
+           <a href="https://www.instagram.com/hadrohmj/" target="_blank">Instagram</a>
+        </p>
+    </footer>
+
+    <!-- Modal (Popup) -->
+    <div class="modal" id="popupModal">
+        <div class="modal-content">
+            <h2>Terima kasih telah bergabung!</h2>
+            <button onclick="closeModal()">Tutup</button>
+        </div>
+    </div>
+
+    <script>
+        // Script untuk membuka dan menutup modal
+        function openModal() {
+            document.getElementById("popupModal").style.display = "flex";
+        }
+
+        function closeModal() {
+            document.getElementById("popupModal").style.display = "none";
+        }
+    </script>
+
+</body>
+</html>
